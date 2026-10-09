@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>เกม FPS ควบคุมด้วยท่าทางมือ | โครงงาน</title>
+  <link rel="stylesheet" href="../portfolio.css">
+</head>
+<body class="detail-page">
+  <header class="site-header compact">
+    <a class="brand" href="../index.html"><span class="brand-mark">P</span><span>PORTFOLIO<span class="brand-dot">.</span></span></a>
+    <nav aria-label="Main navigation"><a href="../index.html">หน้าแรก</a><a href="../project.html">ผลงาน</a></nav>
+  </header>
+  <main class="detail-main">
+    <a class="back-link" href="../project.html">← กลับไปหน้าผลงาน</a>
+    <p class="eyebrow">ประสบการณ์เชิงโต้ตอบ · UNITY · MEDIAPIPE</p>
+    <h1>Handtracking Simulation VR</h1>
+    <p class="lead">แนวคิดเกมสำรวจมุมมองบุคคลที่หนึ่งที่ควบคุมด้วยท่าทางมือ เชื่อมต่อคอมพิวเตอร์วิทัศน์ใน Python กับการเล่นเกมใน Unity ผ่านข้อความ UDP</p>
+        <div class="vr-gallery">
+      <figure><img src="../assets/handtracking-1.png" alt="หน้าจอเริ่มต้นของการจำลอง VR"><figcaption>หน้าจอเริ่มต้นของระบบจำลอง</figcaption></figure>
+      <figure><img src="../assets/handtracking-2.png" alt="การชี้เป้าหมายและแสดงระยะห่าง"><figcaption>การชี้เป้าหมายและแสดงระยะห่าง</figcaption></figure>
+      <figure><img src="../assets/handtracking-3.png" alt="การหยิบข้อมูลวัตถุด้วยท่าทางมือ"><figcaption>การโต้ตอบกับวัตถุและแสดงข้อมูล</figcaption></figure>
+    </div>
+    <div class="detail-grid">
+      <section class="detail-card">
+        <h2>เป้าหมายโครงงาน</h2>
+        <p>สร้างระบบโต้ตอบโดยไม่ต้องใช้มือจับอุปกรณ์ ผู้เล่นสามารถเคลื่อนที่ ชี้วัตถุ ดูข้อมูล และสแกนวัตถุที่เลือกในสภาพแวดล้อมสามมิติ</p>
+      </section>
+      <section class="detail-card">
+        <h2>เครื่องมือและเทคโนโลยี</h2>
+        <ul><li>Unity 6</li><li>Python, OpenCV and MediaPipe</li><li>UDP communication</li><li>C# scripts and Unity UI</li></ul>
+      </section>
+      <section class="detail-card wide">
+        <h2>การควบคุมด้วยท่าทาง</h2>
+        <div class="gesture-list">
+          <div><span class="gesture">🖐🏻</span><strong>หันซ้าย/ขวา</strong><p>ใช้ท่ามือแบเพื่อหันซ้ายหรือขวา</p></div>
+          <div><span class="gesture">👐🏻</span><strong>เดินหน้า</strong><p>แบมือทั้งสองข้างเพื่อเดินหน้า</p></div>
+          <div><span class="gesture">☝🏻</span><strong>ชี้ / คลิก</strong><p>ชี้เพื่อโต้ตอบกับวัตถุบนหน้าจอ</p></div>
+          <div><span class="gesture">✊🏻</span><strong>หยุด</strong><p>กำมือเพื่อไม่ส่งคำสั่งเคลื่อนที่</p></div>
+        </div>
+      </section>
+      <section class="detail-card wide">
+        <h2>คุณสมบัติการโต้ตอบที่วางแผนไว้</h2>
+        <ul>
+          <li>ชี้ไปยังวัตถุที่โต้ตอบได้เพื่อเปิดหน้าต่างข้อมูล</li>
+          <li>ใช้ปุ่มบนแป้นพิมพ์เพื่อสแกนและเน้นวัตถุด้วยเงาเรืองแสง</li>
+          <li>แสดงระยะห่างจากวัตถุที่สแกน เช่น “100 m”</li>
+          <li>แยกการตรวจจับมือใน Python ออกจากการรับคำสั่งใน Unity เพื่อให้ง่ายต่อการแก้ไขข้อผิดพลาด</li>
+        </ul>
+        <p class="note">หน้านี้อธิบายขอบเขตและแนวทางการพัฒนาโครงงาน ไม่ได้ระบุว่าคุณสมบัติที่วางแผนไว้ทั้งหมดเสร็จสมบูรณ์แล้ว</p>
+      </section>
+    </div>
+  </main>
+  <footer class="site-footer"><p>แฟ้มสะสมผลงานนักศึกษา · รายละเอียดโครงงาน</p></footer>
+</body>
+</html>

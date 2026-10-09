@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogger | Welcome to the Forum</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main class="forum">
+        <header class="forum-header">
+            <div class="header-icon" aria-hidden="true">✦</div>
+            <p class="eyebrow">COMMUNITY SPACE</p>
+            <h1 id="top">Welcome to the Forum</h1>
+            <p class="subtitle">Share your thoughts and join the conversation.</p>
+        </header>
+
+        <section class="discussion" aria-label="Forum discussion">
+            <article class="post-card topic-card">
+                <div class="post-label"><span class="dot"></span> Topic</div>
+                <div id="topic" class="post-content empty-state">Your first post will appear here.</div>
+            </article>
+            <article class="post-card reply-card">
+                <div class="post-label"><span class="dot"></span> Reply 1</div>
+                <div id="reply1" class="post-content empty-state">The first reply will appear here.</div>
+            </article>
+            <article class="post-card reply-card">
+                <div class="post-label"><span class="dot"></span> Reply 2</div>
+                <div id="reply2" class="post-content empty-state">The second reply will appear here.</div>
+            </article>
+        </section>
+
+        <section class="composer" aria-label="Write a post">
+            <label for="message">Write a message</label>
+            <textarea name="message" id="message" rows="4" maxlength="1000"
+                placeholder="What would you like to share?"></textarea>
+            <div class="composer-footer">
+                <span id="charCount" class="char-count">0 / 1000</span>
+                <div class="actions">
+                    <button type="button" id="clearButton" class="button button-secondary">Clear</button>
+                    <button type="button" id="postButton" class="button button-primary">Post message <span aria-hidden="true">→</span></button>
+                </div>
+            </div>
+            <p id="status" class="status" role="status" aria-live="polite"></p>
+        </section>
+        <footer>Be kind. Keep the conversation going.</footer>
+    </main>
+</body>
+</html>

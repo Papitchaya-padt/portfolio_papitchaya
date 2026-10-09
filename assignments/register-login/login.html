@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <section class="card login-card">
+            <div class="brand">WEB PROGRAMMING</div>
+            <h1>Welcome Back</h1>
+            <p class="subtitle">Login with your registered account.</p>
+
+            <form name="myLogin" id="myLogin">
+                <div class="field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" autocomplete="username" required>
+                </div>
+
+                <div class="field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" autocomplete="current-password" required>
+                </div>
+
+                <div class="actions">
+                    <input type="submit" value="Login" id="loginBtn" class="btn primary">
+                    <input type="reset" value="Clear" id="clearBtn" class="btn secondary">
+                </div>
+
+                <p class="switch">Don't have an account?
+                    <a href="register.html">Register</a>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

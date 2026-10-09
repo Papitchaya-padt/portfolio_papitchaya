@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="register.js" defer></script>
+</head>
+<body>
+    <main class="page">
+        <section class="card">
+            <div class="brand">WEB PROGRAMMING</div>
+            <h1>Create Account</h1>
+            <p class="subtitle">Register your information to continue.</p>
+
+            <form name="myRegister" id="myRegister" action="login.html" novalidate>
+                <div id="errormsg" class="error" aria-live="polite"></div>
+
+                <div class="grid">
+                    <div class="field">
+                        <label for="firstname">First name <span>*</span></label>
+                        <input type="text" id="firstname" name="firstname" autocomplete="given-name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="lastname">Last name <span>*</span></label>
+                        <input type="text" id="lastname" name="lastname" autocomplete="family-name" required>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label>Gender <span>*</span></label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label for="bday">Birthday <span>*</span></label>
+                    <input type="date" id="bday" name="bday" required>
+                </div>
+
+                <div class="field">
+                    <label for="email">Email address <span>*</span></label>
+                    <input type="email" id="email" name="email" autocomplete="email" required>
+                </div>
+
+                <div class="field">
+                    <label for="username">Username <span>*</span></label>
+                    <input type="text" id="username" name="username" autocomplete="username" required>
+                </div>
+
+                <div class="grid">
+                    <div class="field">
+                        <label for="password">Password <span>*</span></label>
+                        <input type="password" id="password" name="password" autocomplete="new-password" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="retypePassword">Retype Password <span>*</span></label>
+                        <input type="password" id="retypePassword" name="retypePassword" autocomplete="new-password" required>
+                    </div>
+                </div>
+
+                <div class="actions">
+                    <input type="submit" value="Register" id="registerBtn" class="btn primary">
+                    <input type="reset" value="Reset" id="resetBtn" class="btn secondary">
+                </div>
+
+                <p class="switch">Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

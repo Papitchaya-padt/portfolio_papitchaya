@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square Game | Assignment 7</title>
+    <link rel="stylesheet" type="text/css" href="game.css">
+    <script type="text/javascript" src="game.js"></script>
+</head>
+<body>
+    <main class="game-wrapper">
+        <header class="hero">
+            <p class="eyebrow">MDT312 · ASSIGNMENT 7</p>
+            <h1>Square Game</h1>
+            <p>Clear every square before the 30-second timer reaches zero.</p>
+        </header>
+
+        <section class="control-card" aria-label="Game controls">
+            <fieldset>
+                <legend>Game Control</legend>
+
+                <div class="control-group">
+                    <label for="numbox">Number of squares</label>
+                    <input type="number" name="numbox" id="numbox" min="1" max="100" placeholder="10">
+                </div>
+
+                <div class="control-group">
+                    <label for="color">Square color</label>
+                    <select name="color" id="color">
+                        <option value="maroon">Maroon</option>
+                        <option value="lightgreen">Light Green</option>
+                        <option value="magenta">Magenta</option>
+                    </select>
+                </div>
+
+                <button id="start" type="button">Start Game</button>
+            </fieldset>
+
+            <div class="stats" aria-live="polite">
+                <div class="stat">
+                    <span>Time</span>
+                    <strong id="clock">30</strong>
+                    <small>seconds</small>
+                </div>
+                <div class="stat">
+                    <span>Remaining</span>
+                    <strong id="remaining">0</strong>
+                    <small>squares</small>
+                </div>
+            </div>
+
+            <p id="status" class="status">Choose the number and color, then press Start Game.</p>
+        </section>
+
+        <section id="container" aria-label="Square game board">
+            <div id="layer"></div>
+        </section>
+
+        <footer>
+            <p>Tip: click the squares quickly — every square disappears when you click it.</p>
+        </footer>
+    </main>
+</body>
+</html>
